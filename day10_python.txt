@@ -1,0 +1,74 @@
+Q) What is while loop? When do we use it ?
+A) The while loop is a fundamental control flow structure in programming, enabling the execution of a block of code repeatedly as long as the specified condition  remains true.
+
+
+Q) What is a function. Why do we use functions ?
+A) A function is a set of statements that when called perform some specific task.
+   When we want to use the same lines of code again and again, we use functions.
+   Functions are used to ignore repetative works.
+
+
+Q) How to specify FUNCTION keyword ?
+A) Syntax : 
+            def function_name(argument1, argument2,...):
+		lines of code
+
+
+Q) How to read multiple variables in a single line?
+A) Ex:
+      a,b = map(int,input("Enter numbers").split(" "))
+      print(a,b)
+
+      o/p :  Enter numbers 10 20
+             10 20
+
+  Ex: 
+      a,b = map(int,input("Enter numbers").split(","))
+      print(a,b)
+
+      o/p : Enter numbers 10,20
+            10 20
+
+
+-----------------------
+Q) Which parameters we have to give to map() method ?
+A) We have to pass 2 parameters.
+   Considering the above examples, we have given 'int' because, we want a and b to be in int datatype.
+   input() method is used to display the data to the user to enter input.
+   For splitting the entered values, we use .split() method.
+
+------------------------
+
+Position of arguments in a function:-
+
+Ex: def greet(name, location)
+	print(f"hello {name}")
+	print(f"are you from this {location}?")
+    greet("sai","AP")
+
+   o/p :  hello sai
+          are you from this AP?
+
+
+
+Ex: def greet(name, location)
+	print(f"hello {name}")
+	print(f"are you from this {location}?")
+    greet("AP", "sai")
+
+    o/p:  hello AP
+          are you from this sai?
+
+
+--------------------------------
+
+Keyword arguments:-
+
+Ex: def greet(name, location)
+	print(f"hello {name}")
+	print(f"are you from this {location}?")
+    greet(location = "AP", name = "sai")
+
+   o/p : hello sai
+         are you from this AP?
+
